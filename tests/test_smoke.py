@@ -10,7 +10,6 @@ from phloem import __version__
 from phloem.cli import main
 from phloem.config import load_roles
 
-
 EXAMPLE_ROLES = Path(__file__).resolve().parent.parent / "examples" / "roles.example.yaml"
 
 

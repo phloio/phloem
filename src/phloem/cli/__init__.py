@@ -40,7 +40,7 @@ def validate(roles_path: str) -> None:
 
     try:
         roles = load_roles(roles_path)
-    except Exception as e:  # noqa: BLE001
+    except Exception as e:
         click.echo(f"invalid: {e}", err=True)
         sys.exit(1)
 

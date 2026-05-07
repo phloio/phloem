@@ -17,8 +17,15 @@ From source (until v0.1 is published to PyPI):
 ```bash
 git clone https://github.com/phloio/phloem.git
 cd phloem
-pip install -e ".[claude]"      # or ".[all]" for every provider
+make install
+source .venv/bin/activate
 ```
+
+`make install` runs `uv sync --all-groups` (which creates `.venv/`,
+installs the package in editable mode, and pulls every dev + docs
+dependency) and then installs the pre-commit hooks. After activating
+the venv you can use `phloem` and `pytest` directly without prefixing
+each command with `uv run`.
 
 Verify:
 

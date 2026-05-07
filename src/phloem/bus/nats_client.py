@@ -19,7 +19,7 @@ from __future__ import annotations
 
 import uuid
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from typing import Any
 
 
@@ -32,7 +32,7 @@ class BusMessage:
     """
 
     id: str = field(default_factory=lambda: str(uuid.uuid4()))
-    ts: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
+    ts: str = field(default_factory=lambda: datetime.now(UTC).isoformat())
     sender: str = ""
     subject: str = ""
     type: str = "message"  # message | event | command | response

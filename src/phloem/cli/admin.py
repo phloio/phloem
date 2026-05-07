@@ -48,7 +48,7 @@ def admin() -> None:
     show_default=True,
     help="Where JetStream stores data on the target host.",
 )
-def setup_relay(  # noqa: PLR0913
+def setup_relay(
     host: str,
     user: str,
     port: int,
