@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://phloio.github.io/phloem/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://phloio.github.io/phloem/configure/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://phloio.github.io/phloem/extend/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://phloio.github.io/phloem/install/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://phloio.github.io/phloem/relay-setup/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+</urlset>
