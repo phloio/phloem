@@ -1,0 +1,67 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "phloem"
+version = "0.0.1"
+description = "An operator-and-agent-fleet coordination substrate over NATS."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.12"
+authors = [
+    { name = "Phloio" },
+]
+keywords = ["agents", "llm", "nats", "orchestration", "claude", "openai"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "nats-py>=2.9",
+    "pyyaml>=6.0",
+    "click>=8.1",
+    "pydantic>=2.6",
+    "structlog>=24.1",
+]
+
+[project.optional-dependencies]
+claude = ["anthropic>=0.40"]
+openai = ["openai>=1.40"]
+all = ["phloem[claude,openai]"]
+dev = [
+    "pytest>=8",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.5",
+    "mypy>=1.10",
+]
+
+[project.scripts]
+phloem = "phloem.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/phloio/phloem"
+Repository = "https://github.com/phloio/phloem"
+Issues = "https://github.com/phloio/phloem/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/phloem"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "N", "RUF"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unreachable = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

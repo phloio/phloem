@@ -1,0 +1,62 @@
+# Example Phloem roles configuration.
+#
+# This file defines an agent fleet for a project. Phloem reads it,
+# resolves one AgentDaemon per role, and connects them all to the same
+# NATS bus.
+#
+# Every project ships its own roles.yaml. The structure is the same;
+# the contents are project-specific.
+
+version: 1
+
+# Bus connection defaults. Overridable per-role.
+bus:
+  servers:
+    - nats://localhost:4222
+  # creds_file: ./secrets/agent.creds   # nkeys/JWT auth (recommended)
+  subject_prefix: phloem                # change if multiple Phloem fleets share a NATS cluster
+
+roles:
+
+  # An internal-developer-style agent role.
+  - name: architect
+    description: System design and technical direction.
+    adapter:
+      type: claude
+      model: claude-opus-4-7
+      options:
+        max_tokens: 8192
+    subjects_in:
+      - phloem.architect.in
+    subjects_out:
+      - phloem.architect.out
+    system_prompt: ./prompts/architect.md
+    tools:
+      - read
+      - grep
+      - bash
+    kb_sources:
+      - type: filesystem
+        options:
+          root: ../my-knowledge-base
+          glob: "**/*.md"
+
+  # A public-facing "Ask Jeeves"-style helper agent.
+  - name: ask-helper
+    description: Answers end-user questions about the platform.
+    adapter:
+      type: claude
+      model: claude-sonnet-4-6
+    subjects_in:
+      - phloem.user-help.>          # all user-help session subjects
+    subjects_out:
+      - phloem.user-help.responses
+    system_prompt: |
+      You are a helpful assistant for the Acme platform.
+      Answer concisely. If you do not know, say so and escalate.
+    tools:
+      - read
+    kb_sources:
+      - type: filesystem
+        options:
+          root: ./public-docs
