@@ -11,7 +11,12 @@ dist/
 .mypy_cache/
 .ruff_cache/
 .coverage
+coverage.xml
+junit-*.xml
 htmlcov/
+
+# mkdocs build output
+site/
 
 # Virtual envs
 .venv/
@@ -37,3 +42,6 @@ nats-data/
 *.nk
 *.creds
 secrets/
+
+# Operator-private session scratch (not committed)
+.claude/agent-context.local.md

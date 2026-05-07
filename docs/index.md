@@ -32,6 +32,8 @@
 
 ## Next
 
-- [Install](install.md)
+- [Getting started](getting-started.md) — install, smoke test, full Make targets reference
 - [Configure](configure.md) — anatomy of `roles.yaml`
 - [Extend](extend.md) — write a new adapter or KB source
+- [Architecture](design/architecture.md) — the why
+- [Architecture decisions](design/decisions/index.md) — short ADRs for each keystone choice

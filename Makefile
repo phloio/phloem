@@ -32,17 +32,9 @@ docs: ## Build and serve the documentation locally
 claude: ## Start Claude Code, resuming the most recent session in this directory (or a fresh one if none)
 	@claude --dangerously-skip-permissions --continue 2>/dev/null || claude --dangerously-skip-permissions
 
-.PHONY: claude-new
-claude-new: ## Start a fresh Claude Code session, ignoring any prior session in this directory
-	@claude --dangerously-skip-permissions
-
 .PHONY: docs-claude
-docs-claude: ## Generate / refresh user-facing documentation using Claude
+docs-claude: ## One-shot Claude that refreshes user-facing documentation from code
 	@claude --dangerously-skip-permissions --print -p "Read .claude/CLAUDE-DOCS.md and follow the instructions"
-
-.PHONY: claude-dev
-claude-dev: ## Generate / refresh dev context for Claude sessions
-	@claude --dangerously-skip-permissions --print -p "Read .claude/CLAUDE-DEV.md and follow the instructions"
 
 .PHONY: clean
 clean: ## Clean build artefacts and caches
