@@ -29,11 +29,11 @@ docs: ## Build and serve the documentation locally
 	@uv run --group docs mkdocs serve
 
 .PHONY: claude
-claude: ## Start Claude Code, resuming the most recent session in this directory
-	@claude --dangerously-skip-permissions --continue
+claude: ## Start Claude Code, resuming the most recent session in this directory (or a fresh one if none)
+	@claude --dangerously-skip-permissions --continue 2>/dev/null || claude --dangerously-skip-permissions
 
 .PHONY: claude-new
-claude-new: ## Start a fresh Claude Code session in this directory
+claude-new: ## Start a fresh Claude Code session, ignoring any prior session in this directory
 	@claude --dangerously-skip-permissions
 
 .PHONY: docs-claude
