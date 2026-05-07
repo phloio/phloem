@@ -1,5 +1,10 @@
 # Phloem
 
+[![CI](https://github.com/phloio/phloem/actions/workflows/ci.yml/badge.svg)](https://github.com/phloio/phloem/actions/workflows/ci.yml)
+[![Tests](https://phloio.testspace.com/spaces/phloem/badge?token=tests)](https://phloio.testspace.com/spaces/phloem)
+[![Docs](https://img.shields.io/badge/docs-phloio.github.io%2Fphloem-blue)](https://phloio.github.io/phloem/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > A coordination substrate for operator-supervised agent fleets.
 
 Phloem lets a small team of human operators run a fleet of LLM-powered
@@ -46,4 +51,4 @@ This is the public starting point, not a usable release.
 
 ## License
 
-Apache 2.0 — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE).

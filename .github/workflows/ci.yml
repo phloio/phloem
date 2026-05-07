@@ -1,0 +1,69 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+# Allow the docs job to push to gh-pages.
+permissions:
+  contents: write
+
+jobs:
+
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/pre-commit
+          key: pre-commit-${{ hashFiles('.pre-commit-config.yaml') }}
+      - run: uv sync --all-groups
+      - run: make check
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
+      - run: uv sync --all-groups
+      - run: make test
+
+      - name: Testspace client setup
+        uses: testspace-com/setup-testspace@v1
+        with:
+          domain: ${{ github.repository_owner }}
+          token: ${{ secrets.TESTSPACE_TOKEN }}
+        if: always()
+
+      - name: Push results to Testspace
+        run: testspace junit-*.xml coverage.xml
+        if: always()
+
+  docs-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
+      - run: uv sync --group docs
+      - run: make docs-test
+
+  docs-deploy:
+    needs: [quality, test, docs-test]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # mkdocs gh-deploy needs full history
+      - uses: astral-sh/setup-uv@v4
+      - run: uv sync --group docs
+      - name: Configure git author
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Deploy docs to GitHub Pages
+        run: uv run --group docs mkdocs gh-deploy --force --clean

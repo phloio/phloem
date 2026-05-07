@@ -1,13 +1,12 @@
-"""Phloem CLI — STUB.
+"""Phloem command-line interface.
 
-Planned commands:
+Top-level groups:
 
-    phloem version                    Print version info.
-    phloem validate <roles.yaml>      Lint a roles file without running anything.
-    phloem run <roles.yaml> <role>    Start one role's daemon.
-    phloem run-all <roles.yaml>       Start daemons for every role in the file.
-    phloem ops subscribe <pattern>    Tail bus subjects from the terminal.
-    phloem ops inject <subject> ...   Publish a one-off message to a subject.
+    phloem version              Print version info.
+    phloem validate <file>      Validate a roles.yaml.
+    phloem run <file> <role>    Run one role's daemon (planned).
+    phloem admin ...            Operator/administrator subcommands (relay, keys, config).
+    phloem ops ...              Day-to-day bus operations (subscribe, inject).
 """
 
 from __future__ import annotations
@@ -17,6 +16,8 @@ import sys
 import click
 
 from phloem import __version__
+from phloem.cli.admin import admin
+from phloem.cli.ops import ops
 
 
 @click.group()
@@ -54,6 +55,10 @@ def validate(roles_path: str) -> None:
 def run(roles_path: str, role_name: str) -> None:
     """Start one role's daemon (not implemented in v0.0)."""
     raise click.ClickException("phloem run is not implemented in v0.0")
+
+
+main.add_command(admin)
+main.add_command(ops)
 
 
 if __name__ == "__main__":

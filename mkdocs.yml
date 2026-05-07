@@ -1,0 +1,48 @@
+site_name: Phloem
+site_description: An operator-and-agent-fleet coordination substrate over NATS.
+site_url: https://phloio.github.io/phloem/
+
+repo_name: phloio/phloem
+repo_url: https://github.com/phloio/phloem
+
+theme:
+  name: material
+  palette:
+    primary: green
+    accent: light green
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Install: install.md
+  - Configure: configure.md
+  - Extend: extend.md
+  - Operate:
+      - Relay setup: relay-setup.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - tables
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            show_source: true
+            docstring_style: google
