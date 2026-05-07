@@ -13,11 +13,47 @@
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
-         <loc>https://phloio.github.io/phloem/install/</loc>
+         <loc>https://phloio.github.io/phloem/getting-started/</loc>
          <lastmod>2026-05-07</lastmod>
     </url>
     <url>
          <loc>https://phloio.github.io/phloem/relay-setup/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://phloio.github.io/phloem/design/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://phloio.github.io/phloem/design/architecture/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://phloio.github.io/phloem/design/decisions/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://phloio.github.io/phloem/design/decisions/0001-message-bus/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://phloio.github.io/phloem/design/decisions/0002-inversion-of-control/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://phloio.github.io/phloem/design/decisions/0003-llm-provider-abstraction/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://phloio.github.io/phloem/design/decisions/0004-pluggable-knowledge-bases/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://phloio.github.io/phloem/design/decisions/0005-config-driven-roles/</loc>
+         <lastmod>2026-05-07</lastmod>
+    </url>
+    <url>
+         <loc>https://phloio.github.io/phloem/design/decisions/0006-python-everywhere/</loc>
          <lastmod>2026-05-07</lastmod>
     </url>
 </urlset>

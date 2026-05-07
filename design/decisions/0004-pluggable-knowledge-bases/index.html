@@ -10,31 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://phloio.github.io/phloem/relay-setup/">
+        <link rel="canonical" href="https://phloio.github.io/phloem/design/decisions/0004-pluggable-knowledge-bases/">
       
       
-        <link rel="prev" href="../extend/">
+        <link rel="prev" href="../0003-llm-provider-abstraction/">
       
       
-        <link rel="next" href="../design/">
+        <link rel="next" href="../0005-config-driven-roles/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Relay setup - Phloem</title>
+        <title>0004 — Pluggable knowledge bases - Phloem</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#relay-setup" class="md-skip">
+        <a href="#0004-pluggable-knowledge-base-sources" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Phloem" class="md-header__button md-logo" aria-label="Phloem" data-md-component="logo">
+    <a href="../../.." title="Phloem" class="md-header__button md-logo" aria-label="Phloem" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Relay setup
+              0004 — Pluggable knowledge bases
             
           </span>
         </div>
@@ -193,7 +193,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -212,7 +212,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../getting-started/" class="md-tabs__link">
+      <a href="../../../getting-started/" class="md-tabs__link">
         
   
   
@@ -231,7 +231,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../configure/" class="md-tabs__link">
+      <a href="../../../configure/" class="md-tabs__link">
         
   
   
@@ -250,7 +250,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../extend/" class="md-tabs__link">
+      <a href="../../../extend/" class="md-tabs__link">
         
   
   
@@ -267,13 +267,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../relay-setup/" class="md-tabs__link">
           
   
   
@@ -289,11 +287,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../design/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -333,7 +333,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Phloem" class="md-nav__button md-logo" aria-label="Phloem" data-md-component="logo">
+    <a href="../../.." title="Phloem" class="md-nav__button md-logo" aria-label="Phloem" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -363,7 +363,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -390,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+      <a href="../../../getting-started/" class="md-nav__link">
         
   
   
@@ -417,7 +417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../configure/" class="md-nav__link">
+      <a href="../../../configure/" class="md-nav__link">
         
   
   
@@ -444,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../extend/" class="md-nav__link">
+      <a href="../../../extend/" class="md-nav__link">
         
   
   
@@ -460,6 +460,93 @@
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operate
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Operate
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../relay-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relay setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -489,210 +576,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Operate
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Operate
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Relay setup
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Relay setup
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites-on-the-target-vm" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prerequisites on the target VM
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Run it
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#day-2-re-applying-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Day-2: re-applying configuration
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#day-2-checking-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Day-2: checking status
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#issuing-credentials-for-a-new-identity" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Issuing credentials for a new identity
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-a-python-command-instead-of-a-shell-script" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why a Python command instead of a shell script?
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -710,7 +597,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -728,7 +615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -756,7 +643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/architecture/" class="md-nav__link">
+      <a href="../../architecture/" class="md-nav__link">
         
   
   
@@ -781,26 +668,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
         
           
-          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="">
             
   
   
@@ -818,7 +710,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -836,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -864,7 +756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/0001-message-bus/" class="md-nav__link">
+      <a href="../0001-message-bus/" class="md-nav__link">
         
   
   
@@ -892,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/0002-inversion-of-control/" class="md-nav__link">
+      <a href="../0002-inversion-of-control/" class="md-nav__link">
         
   
   
@@ -920,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/0003-llm-provider-abstraction/" class="md-nav__link">
+      <a href="../0003-llm-provider-abstraction/" class="md-nav__link">
         
   
   
@@ -945,10 +837,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../design/decisions/0004-pluggable-knowledge-bases/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0004 — Pluggable knowledge bases
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -964,6 +883,120 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Context
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consequences
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternatives-considered" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternatives considered
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alternatives considered">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#embed-retrieval-in-each-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Embed retrieval in each role
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standardise-on-one-provider-eg-a-vector-store" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standardise on one provider (e.g., a vector store)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-only-no-kb-abstraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools-only, no KB abstraction
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -976,7 +1009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/0005-config-driven-roles/" class="md-nav__link">
+      <a href="../0005-config-driven-roles/" class="md-nav__link">
         
   
   
@@ -1004,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/0006-python-everywhere/" class="md-nav__link">
+      <a href="../0006-python-everywhere/" class="md-nav__link">
         
   
   
@@ -1067,10 +1100,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites-on-the-target-vm" class="md-nav__link">
+  <a href="#context" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Prerequisites on the target VM
+        Context
       
     </span>
   </a>
@@ -1078,10 +1111,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-it" class="md-nav__link">
+  <a href="#decision" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Run it
+        Decision
       
     </span>
   </a>
@@ -1089,10 +1122,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#day-2-re-applying-configuration" class="md-nav__link">
+  <a href="#consequences" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Day-2: re-applying configuration
+        Consequences
       
     </span>
   </a>
@@ -1100,32 +1133,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#day-2-checking-status" class="md-nav__link">
+  <a href="#alternatives-considered" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Day-2: checking status
+        Alternatives considered
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alternatives considered">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#embed-retrieval-in-each-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Embed retrieval in each role
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#issuing-credentials-for-a-new-identity" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#standardise-on-one-provider-eg-a-vector-store" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Issuing credentials for a new identity
+        Standardise on one provider (e.g., a vector store)
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#why-a-python-command-instead-of-a-shell-script" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#tools-only-no-kb-abstraction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why a Python command instead of a shell script?
+        Tools-only, no KB abstraction
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
       
     </span>
   </a>
@@ -1152,97 +1213,85 @@
   
 
 
-<h1 id="relay-setup">Relay setup</h1>
-<p>The relay is the NATS server every agent and operator connects to.
-Phloem ships a <code>phloem admin setup-relay</code> command that takes a fresh
-VM and brings it to a working, secured state in one step.</p>
-<blockquote>
-<p><strong>Status (v0.0):</strong> the command is wired up but the implementation is
-a stub. The interface and prerequisites below are the contract it
-will fulfil. Track progress at <a href="https://github.com/phloio/phloem/issues">https://github.com/phloio/phloem/issues</a>.</p>
-</blockquote>
-<h2 id="prerequisites-on-the-target-vm">Prerequisites on the target VM</h2>
-<p>You provision the VM (Hetzner, DigitalOcean, Fly, your own metal —
-Phloem does not care). Before running <code>setup-relay</code>, the VM must have:</p>
+<h1 id="0004-pluggable-knowledge-base-sources">0004 — Pluggable knowledge-base sources</h1>
+<p><strong>Status</strong>: Accepted
+<strong>Date</strong>: 2026-05-06
+<strong>Decider</strong>: Founding design conversation</p>
+<h2 id="context">Context</h2>
+<p>Agent roles need access to bodies of knowledge:</p>
 <ul>
-<li>A public IP or hostname you can reach over SSH.</li>
-<li>Your SSH public key installed for some user (<code>root</code> or any user with
-  <code>sudo</code>).</li>
-<li>That user configured with <code>NOPASSWD</code> <code>sudo</code> (or be <code>root</code> directly).</li>
-<li>Inbound TCP 4222 (NATS client port) reachable from your agents and
-  operators. If you use TLS via Caddy, also TCP 443.</li>
+<li>An internal-developer agent searches a markdown documentation tree.</li>
+<li>A user-facing helper searches public product docs.</li>
+<li>A code-aware agent searches a git repository.</li>
+<li>A future agent might query a vector store, Notion, or Confluence.</li>
 </ul>
-<p>That's it. Phloem handles everything inside the VM.</p>
-<h2 id="run-it">Run it</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>phloem<span class="w"> </span>admin<span class="w"> </span>setup-relay<span class="w"> </span>nats.example.com<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span>--user<span class="w"> </span>phloem<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span>--jetstream<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span>--tls<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span>--data-dir<span class="w"> </span>/var/lib/nats
+<p>Hard-coding knowledge access into the daemon runtime forces every new
+knowledge type to be a code change. Different roles in the same fleet
+also commonly need access to <em>different</em> knowledge sources.</p>
+<h2 id="decision">Decision</h2>
+<p>Define a <code>KBSource</code> ABC. Each source implements two methods:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">KBSource</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="nd">@abstractmethod</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">KBDocument</span><span class="p">]:</span> <span class="o">...</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="nd">@abstractmethod</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uri</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">KBDocument</span><span class="p">:</span> <span class="o">...</span>
 </code></pre></div>
-<p>What this will do:</p>
-<ol>
-<li>Verify SSH connectivity and <code>sudo</code> privileges.</li>
-<li>Install NATS server (latest stable) from the official release.</li>
-<li>Write a systemd unit with JetStream + TLS as configured.</li>
-<li>Generate an operator + system account + initial agent/operator
-   nkeys.</li>
-<li>Open the firewall on the NATS port.</li>
-<li>Start and enable <code>nats-server</code>; verify it's healthy.</li>
-<li>Write the credential files locally so you can reference them from
-   <code>roles.yaml</code>.</li>
-</ol>
-<p>The command is <strong>idempotent</strong> — re-running it on a configured host
-repairs drift rather than starting over.</p>
-<h2 id="day-2-re-applying-configuration">Day-2: re-applying configuration</h2>
-<p>If you change config (e.g., add an account, rotate keys) and want to
-re-apply without reinstalling:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>phloem<span class="w"> </span>admin<span class="w"> </span>configure<span class="w"> </span>nats.example.com<span class="w"> </span>--user<span class="w"> </span>phloem
+<p>Sources are configured per-role in <code>roles.yaml</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">kb_sources</span><span class="p">:</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">filesystem</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">options</span><span class="p">:</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="nt">root</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./public-docs</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">      </span><span class="nt">glob</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;**/*.md&quot;</span>
 </code></pre></div>
-<h2 id="day-2-checking-status">Day-2: checking status</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>phloem<span class="w"> </span>admin<span class="w"> </span>status<span class="w"> </span>nats.example.com<span class="w"> </span>--user<span class="w"> </span>phloem
-</code></pre></div>
-<p>Reports NATS server health, JetStream stream sizes, and currently
-connected clients.</p>
-<h2 id="issuing-credentials-for-a-new-identity">Issuing credentials for a new identity</h2>
-<p>When you onboard a new agent role or operator:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>phloem<span class="w"> </span>admin<span class="w"> </span>issue-creds<span class="w"> </span>backend-developer<span class="w"> </span>--scope<span class="w"> </span>agent<span class="w"> </span>--out<span class="w"> </span>./secrets/backend.creds
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>phloem<span class="w"> </span>admin<span class="w"> </span>issue-creds<span class="w"> </span>priya<span class="w">             </span>--scope<span class="w"> </span>operator<span class="w"> </span>--out<span class="w"> </span>./secrets/priya.creds
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>phloem<span class="w"> </span>admin<span class="w"> </span>issue-creds<span class="w"> </span>new-hire<span class="w">          </span>--scope<span class="w"> </span>trainee<span class="w">  </span>--out<span class="w"> </span>./secrets/new-hire.creds
-</code></pre></div>
-<p>Scopes:</p>
-<table>
-<thead>
-<tr>
-<th>Scope</th>
-<th>Can publish on</th>
-<th>Can subscribe to</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>agent</td>
-<td><code>phloem.&lt;own-role&gt;.out</code> and <code>.events</code></td>
-<td><code>phloem.&lt;own-role&gt;.in</code> and any allowlisted KB subjects</td>
-</tr>
-<tr>
-<td>operator</td>
-<td><code>phloem.&gt;</code> (anything)</td>
-<td><code>phloem.&gt;</code> (anything)</td>
-</tr>
-<tr>
-<td>trainee</td>
-<td><code>phloem.ops.&gt;</code> only</td>
-<td><code>phloem.&gt;</code> (read-only otherwise)</td>
-</tr>
-</tbody>
-</table>
-<p>Reference the resulting <code>.creds</code> file from <code>roles.yaml</code> (<code>bus.creds_file</code>)
-or the operator console config.</p>
-<h2 id="why-a-python-command-instead-of-a-shell-script">Why a Python command instead of a shell script?</h2>
-<p>Same reason the rest of Phloem is Python: testable, composable, no
-Bash-isms, and operators only need <code>pip install phloem</code> to get the
-admin tooling — no separate script repo to keep in sync.</p>
+<p>Day-1 ship: filesystem source (markdown directory). Planned: git, http,
+vector-store wrappers. Anything else is pluggable.</p>
+<h2 id="consequences">Consequences</h2>
+<p><strong>Positive</strong>:</p>
+<ul>
+<li>A new knowledge source is one new module that implements two methods.</li>
+<li>Roles compose multiple sources cleanly — <code>kb_sources</code> is a list.</li>
+<li>Vector-search adapters can wrap any other <code>KBSource</code>, layering
+  semantics without coupling.</li>
+<li>The runtime doesn't have to know whether a source hits a local file,
+  a remote API, or an embedding index.</li>
+</ul>
+<p><strong>Negative</strong>:</p>
+<ul>
+<li>The interface is intentionally minimal (search + read). Some sources
+  expose richer capabilities (graph navigation, structured query) that
+  this interface flattens. Accepted: roles that need such richness can
+  use a custom tool rather than going through <code>KBSource</code>.</li>
+<li>Source-specific URIs leak into <code>read(uri)</code> calls. Accepted as a
+  pragmatic seam: the URI is opaque to the runtime, meaningful to the
+  source.</li>
+</ul>
+<h2 id="alternatives-considered">Alternatives considered</h2>
+<h3 id="embed-retrieval-in-each-role">Embed retrieval in each role</h3>
+<p>Each role role implements its own retrieval logic in its system prompt
+and tools. Rejected because (a) duplication across roles, (b) the
+retrieval pattern is the same shape across most use cases, (c) it
+prevents cross-role reuse of curated knowledge.</p>
+<h3 id="standardise-on-one-provider-eg-a-vector-store">Standardise on one provider (e.g., a vector store)</h3>
+<p>Force every project to vectorise its knowledge into a specific store.
+Rejected because (a) most projects start with markdown on disk and
+graduate to vectors only when scale demands it, (b) it introduces a
+hard dependency that v0.0 doesn't need, (c) it fails the "reusable
+across projects" test.</p>
+<h3 id="tools-only-no-kb-abstraction">Tools-only, no KB abstraction</h3>
+<p>Treat KB access as just another tool the LLM can call. Rejected
+because (a) it loses the per-role config-driven model, (b) it forces
+each role to redeclare KB access in its tool list, (c) it makes
+multi-source composition awkward.</p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>The runtime exposes <code>KBSource</code> instances to the LLM as searchable
+  read-only tools — the LLM does not see the source class directly.</li>
+<li><code>KBDocument.metadata</code> is intentionally a free-form dict; sources can
+  attach whatever they want (file path, modified time, score, etc.).</li>
+</ul>
 
 
 
@@ -1292,10 +1341,10 @@ admin tooling — no separate script repo to keep in sync.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

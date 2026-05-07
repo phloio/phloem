@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://phloio.github.io/phloem/extend/">
+        <link rel="canonical" href="https://phloio.github.io/phloem/design/">
       
       
-        <link rel="prev" href="../configure/">
+        <link rel="prev" href="../relay-setup/">
       
       
-        <link rel="next" href="../relay-setup/">
+        <link rel="next" href="architecture/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Extend - Phloem</title>
+        <title>Overview - Phloem</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#extend" class="md-skip">
+        <a href="#design" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Extend
+              Overview
             
           </span>
         </div>
@@ -248,11 +248,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../extend/" class="md-tabs__link">
         
   
   
@@ -289,11 +287,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../design/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -441,37 +441,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Extend
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../extend/" class="md-nav__link">
         
   
   
@@ -487,76 +460,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#add-an-llm-adapter" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Add an LLM adapter
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Add an LLM adapter">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-translate-means-in-practice" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What "translate" means in practice
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-a-kb-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Add a KB source
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-the-runtime-expects-from-your-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What the runtime expects from your code
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -652,26 +555,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -689,7 +597,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -704,10 +612,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../design/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -723,6 +640,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -735,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/architecture/" class="md-nav__link">
+      <a href="architecture/" class="md-nav__link">
         
   
   
@@ -769,17 +687,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
         
           
-          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="">
             
   
   
@@ -815,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/" class="md-nav__link">
+      <a href="decisions/" class="md-nav__link">
         
   
   
@@ -843,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/0001-message-bus/" class="md-nav__link">
+      <a href="decisions/0001-message-bus/" class="md-nav__link">
         
   
   
@@ -871,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/0002-inversion-of-control/" class="md-nav__link">
+      <a href="decisions/0002-inversion-of-control/" class="md-nav__link">
         
   
   
@@ -899,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/0003-llm-provider-abstraction/" class="md-nav__link">
+      <a href="decisions/0003-llm-provider-abstraction/" class="md-nav__link">
         
   
   
@@ -927,7 +848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/0004-pluggable-knowledge-bases/" class="md-nav__link">
+      <a href="decisions/0004-pluggable-knowledge-bases/" class="md-nav__link">
         
   
   
@@ -955,7 +876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/0005-config-driven-roles/" class="md-nav__link">
+      <a href="decisions/0005-config-driven-roles/" class="md-nav__link">
         
   
   
@@ -983,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/0006-python-everywhere/" class="md-nav__link">
+      <a href="decisions/0006-python-everywhere/" class="md-nav__link">
         
   
   
@@ -1039,64 +960,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#add-an-llm-adapter" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Add an LLM adapter
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Add an LLM adapter">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-translate-means-in-practice" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What "translate" means in practice
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-a-kb-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Add a KB source
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-the-runtime-expects-from-your-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What the runtime expects from your code
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1115,96 +978,17 @@
   
 
 
-<h1 id="extend">Extend</h1>
-<p>Phloem has two extension seams: <strong>LLM adapters</strong> and <strong>KB sources</strong>.
-Both are plain Python ABCs; implement the interface, register your
-class, reference it from <code>roles.yaml</code>.</p>
-<h2 id="add-an-llm-adapter">Add an LLM adapter</h2>
-<p>Implement <code>phloem.adapters.base.LLMAdapter</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">phloem.adapters.base</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">AdapterResponse</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">LLMAdapter</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">Message</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">ToolDefinition</span><span class="p">,</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">)</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">class</span><span class="w"> </span><span class="nc">MyProviderAdapter</span><span class="p">(</span><span class="n">LLMAdapter</span><span class="p">):</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;my-provider&quot;</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">api_key</span> <span class="o">=</span> <span class="n">api_key</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        <span class="bp">self</span><span class="p">,</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        <span class="n">messages</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Message</span><span class="p">],</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>        <span class="n">tools</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ToolDefinition</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>        <span class="n">system_prompt</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        <span class="n">max_tokens</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">4096</span><span class="p">,</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>        <span class="o">**</span><span class="n">provider_kwargs</span><span class="p">,</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">AdapterResponse</span><span class="p">:</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>        <span class="c1"># Translate Phloem types -&gt; your SDK&#39;s types</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>        <span class="c1"># Call your SDK</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>        <span class="c1"># Translate the response back -&gt; AdapterResponse</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>        <span class="o">...</span>
-</code></pre></div>
-<p>Register it (mechanism is TBD pre-v0.1; likely an entry-point group
-<code>phloem.adapters</code> or an explicit <code>register_adapter()</code> call). Then in
-<code>roles.yaml</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">adapter</span><span class="p">:</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-provider</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-model-id</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nt">options</span><span class="p">:</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">...</span>
-</code></pre></div>
-<h3 id="what-translate-means-in-practice">What "translate" means in practice</h3>
-<p>The interface intentionally avoids leaking provider-specific concepts.
-Where providers differ:</p>
+<h1 id="design">Design</h1>
+<p>This section captures the <em>why</em> behind Phloem.</p>
 <ul>
-<li><strong>Tool calling format.</strong> Anthropic uses <code>tool_use</code> blocks; OpenAI uses
-  <code>tool_calls</code> on the message. Your adapter should translate both
-  directions so callers see Phloem <code>ToolCall</code> regardless.</li>
-<li><strong>System prompt placement.</strong> Anthropic takes it as a top-level field;
-  OpenAI puts it as the first message with <code>role: "system"</code>. Your
-  adapter handles this.</li>
-<li><strong>Streaming vs. non-streaming.</strong> v0.1 will be non-streaming only. A
-  streaming variant of <code>run()</code> will be added later as a separate method.</li>
+<li><a href="architecture/">Architecture</a> — the full system shape, components, and what
+  Phloem is and is not.</li>
+<li><a href="decisions/">Decisions</a> — short architecture decision records (ADRs)
+  for each keystone choice.</li>
 </ul>
-<h2 id="add-a-kb-source">Add a KB source</h2>
-<p>Implement <code>phloem.kb.base.KBSource</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">phloem.kb.base</span><span class="w"> </span><span class="kn">import</span> <span class="n">KBDocument</span><span class="p">,</span> <span class="n">KBSource</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">class</span><span class="w"> </span><span class="nc">MyKBSource</span><span class="p">(</span><span class="n">KBSource</span><span class="p">):</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;my-kb&quot;</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>        <span class="o">...</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">KBDocument</span><span class="p">]:</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        <span class="o">...</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uri</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">KBDocument</span><span class="p">:</span>
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>        <span class="o">...</span>
-</code></pre></div>
-<p>Reference from <code>roles.yaml</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">kb_sources</span><span class="p">:</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-kb</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nt">options</span><span class="p">:</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">...</span>
-</code></pre></div>
-<h2 id="what-the-runtime-expects-from-your-code">What the runtime expects from your code</h2>
-<ul>
-<li><strong>Stateless</strong> between calls. The daemon owns the loop and passes
-  history in.</li>
-<li><strong>Async</strong>. All I/O is <code>async def</code>. Wrap sync SDKs with <code>asyncio.to_thread</code>
-  if you must.</li>
-<li><strong>Honest exceptions</strong>. Raise. The runtime logs and surfaces failures
-  on <code>phloem.&lt;role&gt;.events</code>.</li>
-<li><strong>No silent retries</strong>. If you want retries, do them explicitly with a
-  budget you can configure.</li>
-</ul>
+<p>User-facing documentation (install, configure, extend, operate) lives in the
+top-level docs sections; this section is for contributors and future
+maintainers asking "why was it built this way?"</p>
 
 
 

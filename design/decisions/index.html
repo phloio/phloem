@@ -10,31 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://phloio.github.io/phloem/relay-setup/">
+        <link rel="canonical" href="https://phloio.github.io/phloem/design/decisions/">
       
       
-        <link rel="prev" href="../extend/">
+        <link rel="prev" href="../architecture/">
       
       
-        <link rel="next" href="../design/">
+        <link rel="next" href="0001-message-bus/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Relay setup - Phloem</title>
+        <title>Index - Phloem</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#relay-setup" class="md-skip">
+        <a href="#architecture-decisions" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Phloem" class="md-header__button md-logo" aria-label="Phloem" data-md-component="logo">
+    <a href="../.." title="Phloem" class="md-header__button md-logo" aria-label="Phloem" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Relay setup
+              Index
             
           </span>
         </div>
@@ -193,7 +193,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -212,7 +212,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../getting-started/" class="md-tabs__link">
+      <a href="../../getting-started/" class="md-tabs__link">
         
   
   
@@ -231,7 +231,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../configure/" class="md-tabs__link">
+      <a href="../../configure/" class="md-tabs__link">
         
   
   
@@ -250,7 +250,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../extend/" class="md-tabs__link">
+      <a href="../../extend/" class="md-tabs__link">
         
   
   
@@ -267,13 +267,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../relay-setup/" class="md-tabs__link">
           
   
   
@@ -289,11 +287,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../design/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -333,7 +333,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Phloem" class="md-nav__button md-logo" aria-label="Phloem" data-md-component="logo">
+    <a href="../.." title="Phloem" class="md-nav__button md-logo" aria-label="Phloem" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -363,7 +363,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -390,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+      <a href="../../getting-started/" class="md-nav__link">
         
   
   
@@ -417,7 +417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../configure/" class="md-nav__link">
+      <a href="../../configure/" class="md-nav__link">
         
   
   
@@ -444,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../extend/" class="md-nav__link">
+      <a href="../../extend/" class="md-nav__link">
         
   
   
@@ -460,6 +460,93 @@
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operate
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Operate
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../relay-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relay setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -489,17 +576,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    Operate
+    Design
   
 
     
@@ -510,12 +597,125 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Operate
+    Design
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Decisions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Decisions
   
 
           </label>
@@ -544,7 +744,7 @@
   <span class="md-ellipsis">
     
   
-    Relay setup
+    Index
   
 
     
@@ -562,7 +762,7 @@
   <span class="md-ellipsis">
     
   
-    Relay setup
+    Index
   
 
     
@@ -588,65 +788,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites-on-the-target-vm" class="md-nav__link">
+  <a href="#how-to-add-an-adr" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Prerequisites on the target VM
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Run it
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#day-2-re-applying-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Day-2: re-applying configuration
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#day-2-checking-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Day-2: checking status
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#issuing-credentials-for-a-new-identity" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Issuing credentials for a new identity
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-a-python-command-instead-of-a-shell-script" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why a Python command instead of a shell script?
+        How to add an ADR
       
     </span>
   </a>
@@ -662,65 +807,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Design
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Design
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
               
                 
   
@@ -728,143 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../design/architecture/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Architecture
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Decisions
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Decisions
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../design/decisions/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Index
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../design/decisions/0001-message-bus/" class="md-nav__link">
+      <a href="0001-message-bus/" class="md-nav__link">
         
   
   
@@ -892,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/0002-inversion-of-control/" class="md-nav__link">
+      <a href="0002-inversion-of-control/" class="md-nav__link">
         
   
   
@@ -920,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/0003-llm-provider-abstraction/" class="md-nav__link">
+      <a href="0003-llm-provider-abstraction/" class="md-nav__link">
         
   
   
@@ -948,7 +898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/0004-pluggable-knowledge-bases/" class="md-nav__link">
+      <a href="0004-pluggable-knowledge-bases/" class="md-nav__link">
         
   
   
@@ -976,7 +926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/0005-config-driven-roles/" class="md-nav__link">
+      <a href="0005-config-driven-roles/" class="md-nav__link">
         
   
   
@@ -1004,7 +954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design/decisions/0006-python-everywhere/" class="md-nav__link">
+      <a href="0006-python-everywhere/" class="md-nav__link">
         
   
   
@@ -1067,65 +1017,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites-on-the-target-vm" class="md-nav__link">
+  <a href="#how-to-add-an-adr" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Prerequisites on the target VM
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Run it
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#day-2-re-applying-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Day-2: re-applying configuration
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#day-2-checking-status" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Day-2: checking status
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#issuing-credentials-for-a-new-identity" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Issuing credentials for a new identity
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-a-python-command-instead-of-a-shell-script" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why a Python command instead of a shell script?
+        How to add an ADR
       
     </span>
   </a>
@@ -1152,97 +1047,65 @@
   
 
 
-<h1 id="relay-setup">Relay setup</h1>
-<p>The relay is the NATS server every agent and operator connects to.
-Phloem ships a <code>phloem admin setup-relay</code> command that takes a fresh
-VM and brings it to a working, secured state in one step.</p>
-<blockquote>
-<p><strong>Status (v0.0):</strong> the command is wired up but the implementation is
-a stub. The interface and prerequisites below are the contract it
-will fulfil. Track progress at <a href="https://github.com/phloio/phloem/issues">https://github.com/phloio/phloem/issues</a>.</p>
-</blockquote>
-<h2 id="prerequisites-on-the-target-vm">Prerequisites on the target VM</h2>
-<p>You provision the VM (Hetzner, DigitalOcean, Fly, your own metal —
-Phloem does not care). Before running <code>setup-relay</code>, the VM must have:</p>
-<ul>
-<li>A public IP or hostname you can reach over SSH.</li>
-<li>Your SSH public key installed for some user (<code>root</code> or any user with
-  <code>sudo</code>).</li>
-<li>That user configured with <code>NOPASSWD</code> <code>sudo</code> (or be <code>root</code> directly).</li>
-<li>Inbound TCP 4222 (NATS client port) reachable from your agents and
-  operators. If you use TLS via Caddy, also TCP 443.</li>
-</ul>
-<p>That's it. Phloem handles everything inside the VM.</p>
-<h2 id="run-it">Run it</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>phloem<span class="w"> </span>admin<span class="w"> </span>setup-relay<span class="w"> </span>nats.example.com<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span>--user<span class="w"> </span>phloem<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span>--jetstream<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span>--tls<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span>--data-dir<span class="w"> </span>/var/lib/nats
-</code></pre></div>
-<p>What this will do:</p>
-<ol>
-<li>Verify SSH connectivity and <code>sudo</code> privileges.</li>
-<li>Install NATS server (latest stable) from the official release.</li>
-<li>Write a systemd unit with JetStream + TLS as configured.</li>
-<li>Generate an operator + system account + initial agent/operator
-   nkeys.</li>
-<li>Open the firewall on the NATS port.</li>
-<li>Start and enable <code>nats-server</code>; verify it's healthy.</li>
-<li>Write the credential files locally so you can reference them from
-   <code>roles.yaml</code>.</li>
-</ol>
-<p>The command is <strong>idempotent</strong> — re-running it on a configured host
-repairs drift rather than starting over.</p>
-<h2 id="day-2-re-applying-configuration">Day-2: re-applying configuration</h2>
-<p>If you change config (e.g., add an account, rotate keys) and want to
-re-apply without reinstalling:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>phloem<span class="w"> </span>admin<span class="w"> </span>configure<span class="w"> </span>nats.example.com<span class="w"> </span>--user<span class="w"> </span>phloem
-</code></pre></div>
-<h2 id="day-2-checking-status">Day-2: checking status</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>phloem<span class="w"> </span>admin<span class="w"> </span>status<span class="w"> </span>nats.example.com<span class="w"> </span>--user<span class="w"> </span>phloem
-</code></pre></div>
-<p>Reports NATS server health, JetStream stream sizes, and currently
-connected clients.</p>
-<h2 id="issuing-credentials-for-a-new-identity">Issuing credentials for a new identity</h2>
-<p>When you onboard a new agent role or operator:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>phloem<span class="w"> </span>admin<span class="w"> </span>issue-creds<span class="w"> </span>backend-developer<span class="w"> </span>--scope<span class="w"> </span>agent<span class="w"> </span>--out<span class="w"> </span>./secrets/backend.creds
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>phloem<span class="w"> </span>admin<span class="w"> </span>issue-creds<span class="w"> </span>priya<span class="w">             </span>--scope<span class="w"> </span>operator<span class="w"> </span>--out<span class="w"> </span>./secrets/priya.creds
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>phloem<span class="w"> </span>admin<span class="w"> </span>issue-creds<span class="w"> </span>new-hire<span class="w">          </span>--scope<span class="w"> </span>trainee<span class="w">  </span>--out<span class="w"> </span>./secrets/new-hire.creds
-</code></pre></div>
-<p>Scopes:</p>
+<h1 id="architecture-decisions">Architecture decisions</h1>
+<p>Short architecture decision records (ADRs) capturing the <em>why</em> behind each
+keystone choice in Phloem. Each ADR follows the standard
+<strong>Context / Decision / Consequences / Alternatives considered</strong> shape.</p>
 <table>
 <thead>
 <tr>
-<th>Scope</th>
-<th>Can publish on</th>
-<th>Can subscribe to</th>
+<th>#</th>
+<th>Title</th>
+<th>Status</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>agent</td>
-<td><code>phloem.&lt;own-role&gt;.out</code> and <code>.events</code></td>
-<td><code>phloem.&lt;own-role&gt;.in</code> and any allowlisted KB subjects</td>
+<td>0001</td>
+<td><a href="0001-message-bus/">Use NATS as the message bus</a></td>
+<td>Accepted</td>
 </tr>
 <tr>
-<td>operator</td>
-<td><code>phloem.&gt;</code> (anything)</td>
-<td><code>phloem.&gt;</code> (anything)</td>
+<td>0002</td>
+<td><a href="0002-inversion-of-control/">Inversion of control — daemons own the event loop</a></td>
+<td>Accepted</td>
 </tr>
 <tr>
-<td>trainee</td>
-<td><code>phloem.ops.&gt;</code> only</td>
-<td><code>phloem.&gt;</code> (read-only otherwise)</td>
+<td>0003</td>
+<td><a href="0003-llm-provider-abstraction/">Provider-neutral LLM adapter from day 1</a></td>
+<td>Accepted</td>
+</tr>
+<tr>
+<td>0004</td>
+<td><a href="0004-pluggable-knowledge-bases/">Pluggable knowledge-base sources</a></td>
+<td>Accepted</td>
+</tr>
+<tr>
+<td>0005</td>
+<td><a href="0005-config-driven-roles/">Config-driven role catalog (<code>roles.yaml</code>)</a></td>
+<td>Accepted</td>
+</tr>
+<tr>
+<td>0006</td>
+<td><a href="0006-python-everywhere/">Python everywhere — no shell scripts in admin tooling</a></td>
+<td>Accepted</td>
 </tr>
 </tbody>
 </table>
-<p>Reference the resulting <code>.creds</code> file from <code>roles.yaml</code> (<code>bus.creds_file</code>)
-or the operator console config.</p>
-<h2 id="why-a-python-command-instead-of-a-shell-script">Why a Python command instead of a shell script?</h2>
-<p>Same reason the rest of Phloem is Python: testable, composable, no
-Bash-isms, and operators only need <code>pip install phloem</code> to get the
-admin tooling — no separate script repo to keep in sync.</p>
+<h2 id="how-to-add-an-adr">How to add an ADR</h2>
+<ol>
+<li>Pick the next number.</li>
+<li>Copy an existing ADR as a template.</li>
+<li>Fill in <strong>Context</strong>, <strong>Decision</strong>, <strong>Consequences</strong>, and <strong>Alternatives
+   considered</strong>.</li>
+<li>Set <strong>Status</strong> to <code>Proposed</code> while it's under discussion;
+   <code>Accepted</code> once adopted; <code>Superseded by ADR-NNNN</code> if later overturned.</li>
+<li>Add a row to the table above.</li>
+<li>Open a PR. Discussion happens on the PR.</li>
+</ol>
+<p>ADRs are not deleted once accepted — if a decision is reversed, write a new
+ADR that supersedes the old one and update the old one's status to point at
+the new one. The history is the value.</p>
 
 
 
@@ -1292,10 +1155,10 @@ admin tooling — no separate script repo to keep in sync.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

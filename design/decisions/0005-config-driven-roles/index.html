@@ -10,29 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://phloio.github.io/phloem/">
+        <link rel="canonical" href="https://phloio.github.io/phloem/design/decisions/0005-config-driven-roles/">
       
       
+        <link rel="prev" href="../0004-pluggable-knowledge-bases/">
       
-        <link rel="next" href="getting-started/">
+      
+        <link rel="next" href="../0006-python-everywhere/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Phloem</title>
+        <title>0005 — Config-driven roles - Phloem</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#phloem" class="md-skip">
+        <a href="#0005-config-driven-role-catalog-rolesyaml" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +94,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Phloem" class="md-header__button md-logo" aria-label="Phloem" data-md-component="logo">
+    <a href="../../.." title="Phloem" class="md-header__button md-logo" aria-label="Phloem" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              0005 — Config-driven roles
             
           </span>
         </div>
@@ -189,11 +191,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -212,7 +212,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="getting-started/" class="md-tabs__link">
+      <a href="../../../getting-started/" class="md-tabs__link">
         
   
   
@@ -231,7 +231,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="configure/" class="md-tabs__link">
+      <a href="../../../configure/" class="md-tabs__link">
         
   
   
@@ -250,7 +250,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="extend/" class="md-tabs__link">
+      <a href="../../../extend/" class="md-tabs__link">
         
   
   
@@ -271,7 +271,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="relay-setup/" class="md-tabs__link">
+        <a href="../../../relay-setup/" class="md-tabs__link">
           
   
   
@@ -287,11 +287,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="design/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -331,7 +333,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Phloem" class="md-nav__button md-logo" aria-label="Phloem" data-md-component="logo">
+    <a href="../../.." title="Phloem" class="md-nav__button md-logo" aria-label="Phloem" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -358,37 +360,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -404,70 +379,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-you-get" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What you get
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-to-use-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        When to use it
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-not-to-use-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        When not to use it
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Next
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -479,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="getting-started/" class="md-nav__link">
+      <a href="../../../getting-started/" class="md-nav__link">
         
   
   
@@ -506,7 +417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="configure/" class="md-nav__link">
+      <a href="../../../configure/" class="md-nav__link">
         
   
   
@@ -533,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="extend/" class="md-nav__link">
+      <a href="../../../extend/" class="md-nav__link">
         
   
   
@@ -612,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="relay-setup/" class="md-nav__link">
+      <a href="../../../relay-setup/" class="md-nav__link">
         
   
   
@@ -644,26 +555,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -681,7 +597,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -699,7 +615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="design/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -727,7 +643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="design/architecture/" class="md-nav__link">
+      <a href="../../architecture/" class="md-nav__link">
         
   
   
@@ -752,26 +668,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
         
           
-          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="">
             
   
   
@@ -789,7 +710,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -807,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="design/decisions/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -835,7 +756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="design/decisions/0001-message-bus/" class="md-nav__link">
+      <a href="../0001-message-bus/" class="md-nav__link">
         
   
   
@@ -863,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="design/decisions/0002-inversion-of-control/" class="md-nav__link">
+      <a href="../0002-inversion-of-control/" class="md-nav__link">
         
   
   
@@ -891,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="design/decisions/0003-llm-provider-abstraction/" class="md-nav__link">
+      <a href="../0003-llm-provider-abstraction/" class="md-nav__link">
         
   
   
@@ -919,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="design/decisions/0004-pluggable-knowledge-bases/" class="md-nav__link">
+      <a href="../0004-pluggable-knowledge-bases/" class="md-nav__link">
         
   
   
@@ -944,10 +865,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="design/decisions/0005-config-driven-roles/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0005 — Config-driven roles
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -963,6 +911,120 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Context
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consequences
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternatives-considered" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternatives considered
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alternatives considered">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-driven-role-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code-driven role definitions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toml-or-json-instead-of-yaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TOML or JSON instead of YAML
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-file-per-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One file per role
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -975,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="design/decisions/0006-python-everywhere/" class="md-nav__link">
+      <a href="../0006-python-everywhere/" class="md-nav__link">
         
   
   
@@ -1038,10 +1100,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-you-get" class="md-nav__link">
+  <a href="#context" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What you get
+        Context
       
     </span>
   </a>
@@ -1049,10 +1111,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#when-to-use-it" class="md-nav__link">
+  <a href="#decision" class="md-nav__link">
     <span class="md-ellipsis">
       
-        When to use it
+        Decision
       
     </span>
   </a>
@@ -1060,10 +1122,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#when-not-to-use-it" class="md-nav__link">
+  <a href="#consequences" class="md-nav__link">
     <span class="md-ellipsis">
       
-        When not to use it
+        Consequences
       
     </span>
   </a>
@@ -1071,10 +1133,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#next" class="md-nav__link">
+  <a href="#alternatives-considered" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Next
+        Alternatives considered
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alternatives considered">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-driven-role-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code-driven role definitions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toml-or-json-instead-of-yaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TOML or JSON instead of YAML
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-file-per-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One file per role
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
       
     </span>
   </a>
@@ -1101,45 +1213,90 @@
   
 
 
-<h1 id="phloem">Phloem</h1>
-<blockquote>
-<p>A coordination substrate for operator-supervised agent fleets.</p>
-</blockquote>
-<h2 id="what-you-get">What you get</h2>
+<h1 id="0005-config-driven-role-catalog-rolesyaml">0005 — Config-driven role catalog (<code>roles.yaml</code>)</h1>
+<p><strong>Status</strong>: Accepted
+<strong>Date</strong>: 2026-05-06
+<strong>Decider</strong>: Founding design conversation</p>
+<h2 id="context">Context</h2>
+<p>A core goal of Phloem is that the runtime is <strong>project-agnostic</strong>. The
+host project decides what its agents are called, what they do, what they
+have access to, and how many of them exist. The same Phloem code should
+run a fleet of internal-developer agents in one project and a fleet of
+customer-support agents in another, with no Phloem changes.</p>
+<p>The "what is in the fleet" information is not code — it's data. The
+question is where that data lives.</p>
+<h2 id="decision">Decision</h2>
+<p>Every project ships a single YAML file describing its agent fleet:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">bus</span><span class="p">:</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">servers</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">nats</span><span class="p p-Indicator">:</span><span class="nv">//...</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">creds_file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./secrets/agent.creds</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">subject_prefix</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">phloem</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nt">roles</span><span class="p">:</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">architect</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nt">adapter</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> type</span><span class="p">:</span><span class="w"> </span><span class="nv">claude</span><span class="p p-Indicator">,</span><span class="nt"> model</span><span class="p">:</span><span class="w"> </span><span class="nv">claude-opus-4-7</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="nt">subjects_in</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">phloem.architect.in</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="nt">subjects_out</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">phloem.architect.out</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nt">system_prompt</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./prompts/architect.md</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nt">tools</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">read</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">grep</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">bash</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="nt">kb_sources</span><span class="p">:</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">filesystem</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="nt">options</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> root</span><span class="p">:</span><span class="w"> </span><span class="nv">../knowledge-base</span><span class="w"> </span><span class="p p-Indicator">}</span>
+</code></pre></div>
+<p>The Phloem runtime reads this file, validates it (Pydantic), resolves
+each entry into an <code>AgentDaemon</code>, and runs them all against the same
+bus. The runtime contains no Phloio-specific (or any other project's)
+strings.</p>
+<h2 id="consequences">Consequences</h2>
+<p><strong>Positive</strong>:</p>
 <ul>
-<li><strong>Bus</strong>: NATS subjects shaped around agent roles.</li>
-<li><strong>Runtime</strong>: one daemon per role, owning its own event loop. The LLM
-  is invoked per message — it has no monitoring loop to forget.</li>
-<li><strong>Adapter layer</strong>: Claude today, OpenAI next. Bring your own provider
-  by implementing <code>LLMAdapter</code>.</li>
-<li><strong>Knowledge base abstraction</strong>: filesystem today, anything queryable
-  later.</li>
-<li><strong>Operator MCP server</strong>: lets a human in Claude Code (or any MCP host)
-  observe the bus and inject messages.</li>
-<li><strong>Config-driven role catalog</strong>: <code>roles.yaml</code> per project; the runtime
-  is project-agnostic.</li>
+<li>A new project bootstraps by writing one YAML file.</li>
+<li>Adding/removing/renaming a role is a config change, not a code
+  change.</li>
+<li>The same role definition format documents what the fleet <em>is</em>, which
+  is useful for operators reading along.</li>
+<li>Validation surfaces errors at load time, before any daemon starts.</li>
+<li>Tooling (a <code>phloem validate &lt;file&gt;</code> command, today; richer linting
+  later) can statically analyze a fleet.</li>
 </ul>
-<h2 id="when-to-use-it">When to use it</h2>
+<p><strong>Negative</strong>:</p>
 <ul>
-<li>You have <strong>multiple LLM agents</strong> that need to coordinate.</li>
-<li>You have <strong>one or more humans</strong> who need to observe and occasionally
-  steer those agents.</li>
-<li>You want the agents to <strong>survive restarts</strong>, <strong>scale across machines</strong>,
-  and <strong>not depend on a specific LLM provider</strong>.</li>
+<li>YAML has known foot-guns (whitespace sensitivity, surprising type
+  coercion). Mitigated by Pydantic validation + a strict schema.</li>
+<li>Some project-specific behaviour will need <em>some</em> code (a custom
+  KBSource adapter, a custom tool). The seam between config-driven
+  composition and code-required extension is the adapter ABCs.</li>
+<li>Secret material (creds files, API keys) shouldn't live in
+  <code>roles.yaml</code> directly. We keep secrets out by referencing files /
+  env vars from the YAML.</li>
 </ul>
-<h2 id="when-not-to-use-it">When not to use it</h2>
+<h2 id="alternatives-considered">Alternatives considered</h2>
+<h3 id="code-driven-role-definitions">Code-driven role definitions</h3>
+<p>Each role is a Python class. The fleet is assembled in code (e.g., an
+<code>agents/__init__.py</code>). Rejected because:</p>
 <ul>
-<li>Single agent, single user → just call the LLM directly.</li>
-<li>Pure batch processing with no human in the loop → use a workflow engine.</li>
-<li>You need a UI shipped → Phloem is plumbing, not chrome.</li>
+<li>Reusability across projects becomes a packaging problem.</li>
+<li>Operators can't read the fleet definition without reading code.</li>
+<li>Validation requires running Python.</li>
+<li>Ergonomics of "edit one line and restart" suffer.</li>
 </ul>
-<h2 id="next">Next</h2>
+<h3 id="toml-or-json-instead-of-yaml">TOML or JSON instead of YAML</h3>
+<p>Considered. YAML wins because (a) multi-line strings (system prompts
+inline) are far more readable, (b) comments are first-class, (c)
+existing Python ecosystem familiarity. JSON has no comments; TOML's
+nested-list syntax is awkward for <code>roles[].kb_sources[]</code>.</p>
+<h3 id="one-file-per-role">One file per role</h3>
+<p>Considered. Rejected for v0.1 because the "list of roles in one place"
+view is a high-value affordance for operators reading the system, and
+the single file is short enough to fit on one screen for typical
+fleets. We can split if a project's <code>roles.yaml</code> grows past a few
+hundred lines.</p>
+<h2 id="notes">Notes</h2>
 <ul>
-<li><a href="getting-started/">Getting started</a> — install, smoke test, full Make targets reference</li>
-<li><a href="configure/">Configure</a> — anatomy of <code>roles.yaml</code></li>
-<li><a href="extend/">Extend</a> — write a new adapter or KB source</li>
-<li><a href="design/architecture/">Architecture</a> — the why</li>
-<li><a href="design/decisions/">Architecture decisions</a> — short ADRs for each keystone choice</li>
+<li><code>subject_prefix</code> defaults to <code>phloem</code> and is overridable per
+  deployment so multiple Phloem fleets can share a NATS cluster.</li>
+<li>Future schema versions will be opt-in via <code>version:</code> — the loader
+  rejects unknown versions rather than silently coerce.</li>
 </ul>
 
 
@@ -1190,10 +1347,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
